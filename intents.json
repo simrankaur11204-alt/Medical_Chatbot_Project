@@ -1,0 +1,130 @@
+{
+  "intents": [
+    {
+      "tag": "headache",
+      "patterns": ["I have headache", "head pain", "migraine", "my head hurts"],
+      "responses": ["Stay hydrated and rest.", "If persistent, consult a physician."]
+    },
+    {
+      "tag": "fever",
+      "patterns": ["I have fever", "high temperature", "body is hot", "feeling feverish"],
+      "responses": ["Monitor temperature and stay hydrated.", "Take rest and consult doctor if high fever continues."]
+    },
+    {
+      "tag": "cold",
+      "patterns": ["runny nose", "common cold", "sneezing", "blocked nose"],
+      "responses": ["Drink warm fluids and rest.", "Steam inhalation may help."]
+    },
+    {
+      "tag": "cough",
+      "patterns": ["dry cough", "continuous cough", "coughing a lot"],
+      "responses": ["Stay hydrated and use warm fluids.", "Consult doctor if cough lasts more than a week."]
+    },
+    {
+      "tag": "stomach pain",
+      "patterns": ["stomach ache", "abdominal pain", "gas problem"],
+      "responses": ["Avoid spicy food and rest.", "Consult doctor if pain is severe."]
+    },
+    {
+      "tag": "vomiting",
+      "patterns": ["feeling nauseous", "vomiting", "throwing up"],
+      "responses": ["Drink ORS and stay hydrated.", "Seek medical help if vomiting continues."]
+    },
+    {
+      "tag": "diarrhea",
+      "patterns": ["loose motion", "diarrhea", "frequent stools"],
+      "responses": ["Drink plenty of fluids.", "Consult doctor if dehydration occurs."]
+    },
+    {
+      "tag": "back pain",
+      "patterns": ["lower back pain", "spine pain", "back ache"],
+      "responses": ["Avoid heavy lifting.", "Apply hot compress."]
+    },
+    {
+      "tag": "knee pain",
+      "patterns": ["knee pain", "knees are paining", "leg joint pain"],
+      "responses": ["Rest and apply ice.", "Consult orthopedic specialist if swelling occurs."]
+    },
+    {
+      "tag": "chest pain",
+      "patterns": ["chest pain", "tightness in chest"],
+      "responses": ["Seek immediate medical attention.", "Chest pain should not be ignored."]
+    },
+    {
+      "tag": "shortness of breath",
+      "patterns": ["difficulty breathing", "breathless", "shortness of breath"],
+      "responses": ["Seek medical help immediately.", "Sit upright and try to relax."]
+    },
+    {
+      "tag": "sore throat",
+      "patterns": ["throat pain", "difficulty swallowing", "sore throat"],
+      "responses": ["Gargle warm salt water.", "Drink warm fluids."]
+    },
+    {
+      "tag": "fatigue",
+      "patterns": ["feeling tired", "weakness", "fatigue"],
+      "responses": ["Ensure proper nutrition and sleep.", "Consult doctor if fatigue continues."]
+    },
+    {
+      "tag": "eye irritation",
+      "patterns": ["itchy eyes", "red eyes", "eye irritation"],
+      "responses": ["Avoid touching eyes.", "Use clean water to rinse eyes."]
+    },
+    {
+      "tag": "ear pain",
+      "patterns": ["ear ache", "pain in ear", "ear pain"],
+      "responses": ["Avoid inserting objects in ear.", "Consult ENT specialist if pain persists."]
+    },
+    {
+      "tag": "tooth pain",
+      "patterns": ["toothache", "tooth pain", "gum pain"],
+      "responses": ["Maintain oral hygiene.", "Consult dentist if severe."]
+    },
+    {
+      "tag": "skin rash",
+      "patterns": ["skin rash", "itching skin", "red patches"],
+      "responses": ["Avoid scratching.", "Consult dermatologist if spreading."]
+    },
+    {
+      "tag": "allergy",
+      "patterns": ["allergic reaction", "allergy symptoms", "sneezing allergy"],
+      "responses": ["Avoid allergens.", "Antihistamines may help."]
+    },
+    {
+      "tag": "high blood pressure",
+      "patterns": ["high bp", "hypertension", "blood pressure high"],
+      "responses": ["Monitor BP regularly.", "Consult doctor for medication."]
+    },
+    {
+      "tag": "low blood pressure",
+      "patterns": ["low bp", "dizziness", "blood pressure low"],
+      "responses": ["Drink fluids and rest.", "Seek medical advice if fainting occurs."]
+    },
+    {
+      "tag": "diabetes",
+      "patterns": ["high sugar", "diabetes symptoms", "blood sugar high"],
+      "responses": ["Monitor sugar levels.", "Consult doctor for proper management."]
+    },
+    {
+      "tag": "anxiety",
+      "patterns": ["feeling anxious", "panic attack", "anxiety problem"],
+      "responses": ["Practice deep breathing.", "Consult mental health professional if severe."]
+    },
+    {
+      "tag": "depression",
+      "patterns": ["feeling depressed", "low mood", "sad all the time"],
+      "responses": ["Talk to someone you trust.", "Seek professional counseling."]
+    },
+    {
+      "tag": "insomnia",
+      "patterns": ["cannot sleep", "insomnia", "sleep problem"],
+      "responses": ["Maintain sleep schedule.", "Avoid screens before bedtime."]
+    },
+    {
+      "tag": "covid symptoms",
+      "patterns": ["loss of taste", "covid symptoms", "corona symptoms"],
+      "responses": ["Get tested immediately.", "Isolate and consult healthcare provider."]
+    }
+  ]
+}
+

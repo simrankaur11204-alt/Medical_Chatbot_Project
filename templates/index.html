@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Medical Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #e3f2fd, #ffffff);
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .chat-container {
+            width: 500px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #1565c0;
+        }
+
+        #chatbox {
+            height: 350px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .user {
+            color: #0d47a1;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .bot {
+            color: #2e7d32;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 75%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #1565c0;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0d47a1;
+        }
+
+        .disclaimer {
+            margin-top: 15px;
+            font-size: 12px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<div class="chat-container">
+    <h1>AI Medical Chatbot</h1>
+
+    <div id="chatbox"></div>
+
+    <input type="text" id="userInput" placeholder="Enter your symptom...">
+    <button onclick="sendMessage()">Ask</button>
+
+    <div class="disclaimer">
+        ⚠ This chatbot provides general health information only.  
+        Please consult a certified doctor for medical emergencies.
+    </div>
+</div>
+
+<script>
+function sendMessage() {
+    var userText = document.getElementById("userInput").value;
+    var chatbox = document.getElementById("chatbox");
+
+    if(userText === "") return;
+
+    chatbox.innerHTML += "<div class='user'>You: " + userText + "</div>";
+
+    fetch("/get", {
+        method: "POST",
+        body: new URLSearchParams({"msg": userText})
+    })
+    .then(response => response.text())
+    .then(data => {
+        chatbox.innerHTML += "<div class='bot'>Bot: " + data + "</div>";
+        chatbox.scrollTop = chatbox.scrollHeight;
+    });
+
+    document.getElementById("userInput").value = "";
+}
+</script>
+
+</body>
+</html>
